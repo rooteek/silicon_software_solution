@@ -1,0 +1,162 @@
+@media screen and (max-width:1024px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .center-section {
+        display: flex;
+        order: -1;
+    }
+
+
+    .left-section {
+        position: static;
+        width: 100%;
+        flex-direction: row;
+        min-height: 400px;
+        gap: 0px;
+        align-items: center;
+    }
+
+    .left-section p {
+        justify-self: center;
+    }
+
+    .left-model-img img,
+    .rigth-model img {
+        width: 100%;
+    }
+
+    .explosion-img {
+        width: 150px;
+        top: 100px;
+        left: 420px;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    .left-section .star-img {
+        z-index: -1;
+        left: -90px;
+        top: 300px;
+    }
+
+    .center-section {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .center-section::before {
+        content: "";
+        background: none;
+    }
+
+    .center-section .center-section-contain {
+        gap: 10px;
+    }
+
+    .center-section div>h1 {
+        font-size: 80px;
+    }
+
+    .right-section {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .star-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        padding: 0;
+    }
+
+    .explosion-img {
+        z-index: -1;
+        top: -40px;
+        opacity: 0.5;
+    }
+
+
+    .left-section {
+        flex-direction: column-reverse;
+        margin-bottom: 70px;
+    }
+
+    .left-section .star-img {
+        width: 150px;
+        z-index: -1;
+        left: -10px;
+    }
+
+    .center-section div>h1 {
+        margin: 50px 0 30px 0;
+        line-height: 60px;
+    }
+
+    .right-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .right-section .party-img>img {
+        display: none;
+    }
+
+    .right-section .star-img {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .left-section p {
+        width: 100%;
+    }
+
+    .left-section .star-img {
+        width: 50px;
+        top: 60px;
+        left: 270px;
+    }
+
+    .center-section div>h1 {
+        /* border: 2px solid red; */
+        margin-top: 20px;
+        line-height: 40px;
+        font-size: 50px;
+    }
+
+    .center-section div>p {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .center-section div>button {
+        width: 140px;
+        height: 50px;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .right-section {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .right-section div>p {
+        width: 100%;
+    }
+}
