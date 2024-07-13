@@ -1,0 +1,247 @@
+:root {
+    --black: #271908;
+    --white: #ffffff;
+    --bark-black: #252525;
+    --bg-color:#E8D9D6;
+    --ligth-pink:#E3C3B6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "poppins-regular";
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.posision-ab {
+    position: absolute;
+}
+
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-26 {
+    font-size: 26px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.fs-40 {
+    font-size: 30px;
+}
+
+.fs-50 {
+    font-size: 50px;
+}
+
+.fs-64 {
+    font-size: 64px;
+}
+.fs-100 {
+    font-size: 100px;
+}
+.fs-112 {
+    font-size: 112px;
+}
+
+.fb {
+    font-weight: bold;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.radius {
+    border-radius: 18px;
+}
+
+.button-radius {
+    border-radius: 40px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'poppins-regular';
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 64px;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.heading {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.glass__img {
+    width: 235px;
+    position: relative;
+    top: 105px;
+    left: -33px;
+}
+
+.glass__img img {
+    width: 100%;
+}
+
+.header_title {
+    flex-direction: column;
+    gap: 32px;
+    max-width: 573px;
+    flex: 1;
+}
+
+.header_title>h1 {
+    font-weight: bold;
+    width: 100%;
+    line-height: 148px;
+    font-family: 'poppins';
+    color: var(--black);
+}
+
+.header_title>p {
+    max-width: 561px;
+    font-weight: 400;
+    text-wrap: wrap;
+    line-height: 36px;
+    color: var(--bark-black);
+}
+
+.header_title>button {
+    width: 227px;
+    padding: 24px 40px;
+    background: var(--black);
+    color: var(--white);
+    border: none;
+}
+
+.coffee_img {
+    position: absolute;
+    min-width: 745px;
+    height: 1000px;
+    top: -240px;
+    right: -70px;
+    display: flex;
+    justify-content: end;
+    border-radius: 0 0 400px 400px;
+    background-color:var(--ligth-pink) ;
+    transform: rotate(30deg);
+}
+
+.shape_img img {
+    width: 100%;
+}
+
+.coffee_bee {
+    position: absolute;
+    top: 377px;
+    left: 49px;
+    width: 100%;
+    transform: rotate(-30deg);
+    
+}
+.coffee{
+    position: absolute;
+    top: -168px;
+    left: 98px;
+}
+.card-section {
+    gap: 16px;
+    margin: auto;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 100px;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 150px;
+    max-width: 426px;
+    gap: 30px;
+}
+
+.card-img {
+    width: 152px;
+}
+
+.card-img img {
+    border-radius: 80px;
+    height: 195px;
+    width: 100%;
+}
+
+.card-description {
+    flex-direction: column;
+    width: 216px;
+    gap: 16px;
+}
