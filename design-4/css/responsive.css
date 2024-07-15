@@ -1,0 +1,149 @@
+@media screen and (max-width:1330px) {
+    .container {
+        grid-template-columns: 1fr 1.5fr;
+        row-gap: 20px;
+        padding: 20px 40px;
+    }
+
+    .place_list {
+        flex-direction: row;
+        grid-column: 1/3;
+        width: 100%;
+    }
+
+    .place_description {
+        position: static;
+        grid-row: 3;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .place_heading {
+        grid-column: 1/3;
+        align-items: center;
+    }
+
+    .place_heading div>h1,
+    .place_heading>p,
+    .place_heading div>span {
+        text-align: center;
+    }
+
+    .main_place {
+        /* border: 2px solid red; */
+        grid-row: 2;
+        grid-column: 1/3;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .place_description {
+        flex-wrap: wrap;
+        grid-row: 4;
+    }
+
+}
+
+@media screen and (max-width:680px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .place_list img{
+        width: 200px;
+    }
+    .place_heading {
+        gap: 18px;
+    }
+
+    .place_heading div>h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .place_heading>p {
+        font-size: 18px;
+    }
+
+    .place_heading>button {
+        width: 119px;
+        padding: 13px 31px;
+        background: var(--black);
+        color: var(--white);
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .place_heading,
+    .main_place,
+    .place_list,
+    .place_description {
+        grid-column: 1/2;
+    }
+    
+    .main_place {
+        width: 100%;
+    }
+
+    .main_place img {
+        width: 100%;
+    }
+
+    .main_card,
+    .star_img {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+
+    .container{
+        padding: 20px;
+    }
+    .place_heading>button {
+        padding: 9px 0px;
+        font-size: 14px;
+        width: 100px;
+    }
+    
+    .main_place {
+        padding: 0;
+    }
+    .main_place_img {
+        padding: 15px;
+    }
+    .place_list_img img{
+        width: 100%;
+    }
+
+    .place_heading {
+        gap: 12px;
+    }
+
+    .place_heading div>h1 {
+        font-size: 30px;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    .place_heading p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .place_list {
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    .place_description {
+        width: 100%;
+    }
+
+    .place_description_card {
+        width: 100%;
+    }
+}
