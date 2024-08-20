@@ -3,151 +3,69 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
-    --black: #000;
     --black-font: #252525;
     --white-font: #ffffff;
-    --font-size26px: 26px;
-    --font-size64px: 64px;
-    --font-size50px: 50px;
-    --font-size18px: 18px;
 }
-
-.fs-16{
-    font-size: 16px;
-}
-.fs-18{
+.fs-18 {
     font-size: 18px;
 }
-.fs-26{
+.fs-26 {
     font-size: 26px;
 }
-.fs-30{
-    font-size: 30px;
-}
-.fs-50{
-    font-size: 50px;
-}
-.fs-64{
+.fs-64 {
     font-size: 64px;
 }
-/* font family  */
-
-/* @import url("./assets/fonts/AvenirNextCyr-BoldItalic.eot"); */
 @font-face {
     font-family: "avenir";
     src: url(../assets/fonts/AvenirNextCyr-Regular.woff2);
 }
-
-/* font sizes */
-
 .d-flex {
     display: flex;
 }
-
+.f-column{
+    flex-direction: column;
+}
 .justify-center {
     justify-content: center;
 }
-
-.justify-between {
-    justify-content: space-between;
-}
-
 .items-center {
     align-items: center;
 }
-
-/* radius */
-.button-radius {
-    border-radius: 16px;
-}
-
-
 body {
     font-family: "avenir";
 }
-
-.container {
-    flex-direction: column;
-
-}
-
 .heading {
-    width: 610px;
-    flex-direction: column;
+    max-width: 610px;
     text-align: center;
+    gap: 24px;
 }
-
 .heading h1 {
-    font-size: var(--font-size64px);
     line-height: 80px;
     font-weight: 800;
 }
-
 .heading p {
-    height: 108px;
-    font-weight: 400;
-    font-size: var(--font-size26px);
-    line-height: 35.52px;
+    line-height: 35px;
+    opacity: 80%;
 }
-
-.heading > button {
-    width: 158px;
-    height: 54px;
+.heading>button {
     padding: 18px 48px;
     background: var(--black-font);
     color: var(--white-font);
     border: none;
-    margin-top: 16px;
-    font-size: var(--font-size18px);
+    border-radius: 16px;
 }
-
 .image-section {
     flex-wrap: wrap;
     margin-top: 16px;
     gap: 16px;
 }
-.card-image{
-    width: 316px;
-    height: 288px;
-}
-
-
-@media screen and (max-width:768px) {
-    .heading h1 {
-        font-size: var(--font-size50px);
+@media screen and (max-width:630px) {
+    .heading h1{
         line-height: 60px;
-
+        font-size: 45px;
     }
-
-    .heading p {
-        font-size: var(--font-size18px);
-        /* font-size: 20px; */
-        width: 400px;
-    }
-
-    .image-section {
-        padding: 0 20px;
-    }
-
-    .image-section img {
-        flex: 1;
-    }
-}
-
-@media screen and (max-width:480px) {
-    .heading {
-        width: 100%;
-    }
-
-    .heading h1 {
-        font-size: var(--font-size50px);
-        width: 100%;
-    }
-
-    .heading p {
-        font-size: var(--font-size18px);
-        width: 100%;
+    .heading p{
+        font-size: 20px;
     }
 }
